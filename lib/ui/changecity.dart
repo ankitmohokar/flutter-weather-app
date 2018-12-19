@@ -8,7 +8,7 @@ class ChangeCity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.lightBlueAccent,
           title: Text("Enter City Name")
       ),
       body: Stack(

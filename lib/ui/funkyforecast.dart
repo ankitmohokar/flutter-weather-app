@@ -37,7 +37,7 @@ class _FunkyForecastState extends State<FunkyForecast> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Forecastor'),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.lightBlueAccent ,
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.menu),
@@ -84,11 +84,15 @@ class _FunkyForecastState extends State<FunkyForecast> {
               child: Column(
                 children: <Widget>[
                   ListTile(
-                    title: Text("Current Temp: " + (((content['main']['temp'])-32)*0.55).round().toString() + "°C",
+                    title: Text("Temperature: " + (((content['main']['temp'])-32)*0.55).round().toString() + "°C",
                     style: tempStyle())
                   ),
                   ListTile(
-                      title: Text("Forecast High: " + (((content['main']['temp_max'])-32)*0.55).round().toString() + "°F",
+                      title: Text("Today's High: " + (((content['main']['temp_max'])-32)*0.55).round().toString() + "°C",
+                          style: forecastStyle())
+                  ),
+                   ListTile(
+                      title: Text("Today's Low: " + (((content['main']['temp_min'])-32)*0.55).round().toString() + "°C",
                           style: forecastStyle())
                   )
                 ],
