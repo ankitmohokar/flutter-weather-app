@@ -1,0 +1,21 @@
+name: weather_app
+description: Simple Flutter Weather App
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  http: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  - images/light_rain.png
+  - images/umbrella.png
+  - images/white_snow.png
